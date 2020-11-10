@@ -201,6 +201,14 @@ body {
 /* END SECTION */
 /* ====================================== */
 
+/* ====================================== */
+/* CONTACT  */
+.container-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* ====================================== */
 /* FOOTER */
