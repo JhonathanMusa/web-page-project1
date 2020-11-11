@@ -207,6 +207,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+}
+
+.container-contact input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+#send{
+  width: 90%;
 }
 
 
