@@ -87,6 +87,10 @@ body {
   border-radius: 5px;
 }
 
+.input-search:hover{
+  border: 1px solid red;
+}
+
 .drop {
   list-style-type: none;
   margin: 0;
@@ -217,8 +221,19 @@ body {
   border: 1px solid #aaa;
 }
 
+.container-contact input:hover{
+  border: 1px solid red;
+}
+
 #send{
   width: 90%;
+  cursor: pointer;
+}
+
+#send:hover{
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
 }
 
 
