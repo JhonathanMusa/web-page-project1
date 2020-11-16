@@ -153,7 +153,7 @@ body {
 
 .image1{
   width: 40%;
-  float: left;
+
   height: auto;
 }
 
@@ -164,7 +164,7 @@ body {
 
 .image{
   width: 230px;
-  float: right;
+
   height: auto;
   padding-left: 70px;
 }
