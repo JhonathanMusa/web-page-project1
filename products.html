@@ -1,104 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyect 1</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/64fe137729.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Container -->
-    <div id="container">
-      <!-- Header
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyect 1</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/64fe137729.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Container -->
+  <div class="container">
+    <!-- Header
         ================================================= -->
-      <header>
-        <div class="container-header">
-          <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="" /></a>
-          </div>
-
-          <!-- Nav -->
-          <div class="nav">
-            <nav class="main-menu">
-              <ul>
-                <li>
-                  <a href="#">Home <i class="fa fa-angle-down"></i> </a>
-                  <ul class="drop">
-                    <li><a href="index.html">HOMEPAGE 1</a></li>
-                    <li><a href="index.html">HOMEPAGE 2</a></li>
-                    <li><a href="index.html">HOMEPAGE 3</a></li>
-                    <li><a href="index.html">HOMEPAGE 4</a></li>
-                    <li><a href="index.html">HOMEPAGE 5</a></li>
-                    <li><a href="index.html">HOMEPAGE 6</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">About <i class="fa fa-angle-down"></i></a>
-                  <ul class="drop">
-                    <li><a href="index.html">ABOUT 1</a></li>
-                    <li><a href="index.html">ABOUT 2</a></li>
-                    <li><a href="index.html">ABOUT 3</a></li>
-                    <li><a href="index.html">ABOUT 4</a></li>
-                    <li><a href="index.html">ABOUT 5</a></li>
-                    <li><a href="index.html">ABOUT 6</a></li>
-                  </ul>
-                </li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li class="search-button">
-                  <form>
-                    <input type="search" name="search" class="input-search" />
-                    <a href="#">
-                      <i class="fa fa-search" aria-hidden="true"></i
-                    ></a>
-                  </form>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <header>
+      <div class="container-header">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="" /></a>
         </div>
-        <!-- End nav -->
-      </header>
-      <!-- End Header -->
 
-      <!-- Section 
+        <!-- Nav -->
+        <div class="nav">
+          <nav class="nav__main-menu">
+            <ul>
+              <li>
+                <a href="#">Home <i class="fa fa-angle-down"></i> </a>
+                <ul class="nav__drop">
+                  <li><a href="index.html">HOMEPAGE 1</a></li>
+                  <li><a href="index.html">HOMEPAGE 2</a></li>
+                  <li><a href="index.html">HOMEPAGE 3</a></li>
+                  <li><a href="index.html">HOMEPAGE 4</a></li>
+                  <li><a href="index.html">HOMEPAGE 5</a></li>
+                  <li><a href="index.html">HOMEPAGE 6</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">About <i class="fa fa-angle-down"></i></a>
+                <ul class="nav__drop">
+                  <li><a href="index.html">ABOUT 1</a></li>
+                  <li><a href="index.html">ABOUT 2</a></li>
+                  <li><a href="index.html">ABOUT 3</a></li>
+                  <li><a href="index.html">ABOUT 4</a></li>
+                  <li><a href="index.html">ABOUT 5</a></li>
+                  <li><a href="index.html">ABOUT 6</a></li>
+                </ul>
+              </li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+              <li class="nav__search-button">
+                <form>
+                  <input type="search" name="search" class="nav__input-search" />
+                  <a href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i></a>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- End nav -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Section 
     =================================================-->
-      <section>
-        <div class="banner">
-            <img src="upload/blog/home5/sl2.jpg" alt="" />
-        </div>
-      </section>
-      <!-- End section -->
+    <section>
+      <div class="banner">
+        <img src="upload/blog/home5/sl2.jpg" alt="" />
+      </div>
+    </section>
+    <!-- End section -->
 
-      <!-- Other section 
+    <!-- Other section 
         =================================================-->
-      <section>
-        <div id="container-section"></div>
-      </section>
-      <div class="clearfix"></div>
-      <!-- End other section -->
+    <section>
+      <div id="container-section"></div>
+    </section>
+    <div class="clearfix"></div>
+    <!-- End other section -->
 
-      <!-- New section 
+    <!-- New section 
         =================================================-->
- 
-      <!-- End new section -->
 
-      <!-- Footer 
+    <!-- End new section -->
+
+    <!-- Footer 
         =================================================-->
-      <footer>
-        <p class="logo-footer">MITTE</p>
+    <footer>
+      <div class="container-footer">
+        <p class="container-footer__logo-footer">MITTE</p>
         <p class="copy">&copy; Copyright 2020 - All rights reserved</p>
-        <div class="footer-icons">
+        <div class="container-footer__footer-icons">
           <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
           <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
           <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
         </div>
-      </footer>
-      <!-- End footer -->
-    </div>
-  </body>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </div>
+</body>
+
 </html>
