@@ -3,7 +3,8 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   background: #fff;
-  margin: 0;
+  padding-top: 20px;
+  margin: auto;
 }
 
 /* ====================================== */
@@ -18,11 +19,11 @@ body {
 /* HEADER */
 .container-header {
   width: 100%;
-  height: auto;
+  height: 140px;
   margin: auto;
   position: fixed;
   background: #fff;
-  margin-top: 0px;
+  margin-top: -20px;
 }
 
 .logo {
@@ -38,60 +39,57 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.main-menu {
+.nav__main-menu {
   border-top: 1px solid #eee;
   height: 40px;
-
 }
 
-.search-button {
+.nav__search-button {
   margin-left: auto;
 }
 
-.main-menu > ul {
+.nav__main-menu > ul {
   display: flex;
   margin: 0 -10px;
 }
 
-.main-menu ul .search-button {
+.nav__main-menu ul .nav__search-button {
   margin-left: auto;
 }
 
-.search-button i {
+.nav__search-button i {
   color: #000;
 }
 
-.search-button i:hover {
+.nav__search-button i:hover {
   color: red;
 }
 
-
-.main-menu > ul > li {
+.nav__main-menu > ul > li {
   list-style-type: none;
   padding: 10px;
   margin: 0 10px;
 }
 
-.main-menu > ul > li > a {
+.nav__main-menu > ul > li > a {
   text-decoration: none;
   color: #000;
-
 }
 
-.main-menu > ul > li > a:hover {
+.nav__main-menu > ul > li > a:hover {
   color: red;
 }
 
-.input-search {
+.nav__input-search {
   border: 2px solid #eee;
   border-radius: 5px;
 }
 
-.input-search:hover{
+.nav__input-search:hover {
   border: 1px solid red;
 }
 
-.drop {
+.nav__drop {
   list-style-type: none;
   margin: 0;
   padding: 0px;
@@ -101,7 +99,7 @@ body {
   z-index: 999;
 }
 
-.drop > li > a {
+.nav__drop > li > a {
   color: #000000;
   text-decoration: none;
   display: block;
@@ -110,17 +108,15 @@ body {
   background: #fff;
 }
 
-
-.drop > li > a:hover{
+.nav__drop > li > a:hover {
   color: red;
 }
 
-.main-menu > ul > li:hover .drop{
+.nav__main-menu > ul > li:hover .nav__drop {
   display: block;
 }
 /* END NAV */
 /* ====================================== */
-
 
 /* ====================================== */
 /* SECTION BANNER */
@@ -130,62 +126,52 @@ body {
   width: 100%;
 }
 
-
 /* END SECTION BANNER */
 /* ====================================== */
-
-
 
 /* ====================================== */
 /* SECTION */
 
-
-#container-section{
+#container-section {
+  display: flex;
   width: 80%;
   margin: 0 auto;
+  flex-direction: column;
 }
-
-.title-section{
+.title-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image1{
-  width: 40%;
-
-  height: auto;
-}
-
-.image1 img{
+.image1 img {
   width: 500px;
   height: 500px;
 }
 
-.image{
+.image {
   width: 230px;
-
   height: auto;
   padding-left: 70px;
 }
 
-.image-caption p{
+.image__caption p {
   display: flex;
-  padding: 0;
-  margin: 0;
-  padding-top: 10px ;
   justify-content: left;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
   font-size: 11px;
   color: red;
 }
 
-.image-caption h3{
+.image__caption h3 {
   font-size: 17px;
   margin: 0;
 }
 
-.image-caption pre{
+.image__caption pre {
   color: #aaa;
   font-family: sans-serif;
   font-size: small;
@@ -193,49 +179,47 @@ body {
   margin-top: 5px;
 }
 
-.image3{
+.image3 {
   padding-top: 5px;
 }
 
-.clearfix{
+.clearfix {
   clear: both;
 }
-
 
 /* END SECTION */
 /* ====================================== */
 
 /* ====================================== */
 /* CONTACT  */
-.container-contact{
+.container-contact {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-.container-contact input{
+.container-contact input {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   border: 1px solid #aaa;
 }
 
-.container-contact input:hover{
+.container-contact input:hover {
   border: 1px solid red;
 }
 
-#send{
+#send {
   width: 90%;
   cursor: pointer;
 }
 
-#send:hover{
+#send:hover {
   background-color: #333;
   color: #fff;
   border: 1px solid #333;
 }
-
 
 /* ====================================== */
 /* FOOTER */
