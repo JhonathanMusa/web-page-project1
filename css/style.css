@@ -143,26 +143,26 @@ body {
 .image-list {
   width: 90%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 3;
+}
+
+.img{
+  display: grid;
+  grid-template-columns: auto;
+  padding-left: 200px;
 }
 
 .img img{
   width: 200px;
   height: 200px;
-  flex-grow: 1;
-  padding-left: 30px;
 }
 
 .container-img1 {
-  display: flex;
-  flex-wrap: wrap;
   width: 500px;
   height: 500px;
 }
 
 .image__caption p {
-  display: flex;
   padding-top: 10px;
   font-size: 11px;
   color: #f00;
