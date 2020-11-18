@@ -11,12 +11,6 @@ body {
 
 /* ====================================== */
 /* CONTAINER */
-.container {
-  width: 100%;
-  height: auto;
-  background: #fff;
-  margin: 0 auto;
-}
 
 /* ====================================== */
 /* HEADER */
@@ -132,34 +126,30 @@ body {
 
 /* ====================================== */
 /* SECTION */
-
 .container-section__title {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
-.image-list {
+.container-image {
   width: 90%;
-  margin: auto;
-  column-count: 3;
-}
-
-.img{
   display: grid;
-  grid-template-columns: auto;
-  padding-left: 200px;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  padding: 0;
 }
 
-.img img{
-  width: 200px;
-  height: 200px;
+.img-list {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.container-img1 {
-  width: 500px;
-  height: 500px;
+.img > img {
+  grid-column: 1 / span 2;
+  grid-row: 1;
 }
 
 .image__caption p {
