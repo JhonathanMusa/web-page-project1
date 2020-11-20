@@ -126,6 +126,7 @@ body {
 
 /* ====================================== */
 /* TRENDING SECTION */
+
 .trending-section__title {
   display: flex;
   justify-content: center;
@@ -139,6 +140,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 .img-list {
@@ -174,7 +176,11 @@ body {
 /* ====================================== */
 
 /* ====================================== */
-/* FRESH STORIES */
+/* FRESH
+ STORIES */
+.fresh-section {
+  background: #f8f9fa;
+}
 
 .fresh-section__title {
   display: flex;
@@ -215,7 +221,7 @@ body {
   margin-top: 5px;
 }
 
-.fresh-text{
+.fresh-text {
   display: inline-block;
   width: 550px;
   text-align: justify;
@@ -223,9 +229,15 @@ body {
   color: #555;
 }
 
-
 /* END SECTION */
 /* ====================================== */
+
+/* ====================================== */
+/* SECTION 3 */
+.banner2 {
+  width: 100%;
+  padding-left: 85px;
+}
 
 /* ====================================== */
 /* CONTACT  */
