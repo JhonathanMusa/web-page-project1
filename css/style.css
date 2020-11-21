@@ -115,9 +115,8 @@ body {
 
 /* ====================================== */
 /* SECTION BANNER */
-
 .banner img {
-  padding-top: 9%;
+  padding-top: 7%;
   width: 100%;
 }
 
@@ -180,6 +179,7 @@ body {
  STORIES */
 .fresh-section {
   background: #f8f9fa;
+  padding-bottom: 50px;
 }
 
 .fresh-section__title {
@@ -232,11 +232,14 @@ body {
 /* END SECTION */
 /* ====================================== */
 
+
+
+
 /* ====================================== */
 /* SECTION 3 */
-.banner2 {
+.banner2 img{
   width: 100%;
-  padding-left: 85px;
+  padding-bottom: 20px;
 }
 
 /* ====================================== */
