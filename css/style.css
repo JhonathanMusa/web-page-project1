@@ -14,7 +14,10 @@ body {
 
 /* ====================================== */
 /* HEADER */
-.container-header {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   margin: auto;
@@ -115,9 +118,56 @@ body {
 
 /* ====================================== */
 /* SECTION BANNER */
+
 .banner img {
   padding-top: 7%;
-  width: 100%;
+  min-width: 600px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .banner img {
+    padding-top: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logo img {
+    margin-left: -400px;
+  }
+
+  .nav {
+    width: 600px;
+    margin: 0 20px;
+  }
+  .nav__input-search {
+    display: none;
+  }
+
+  .img-list__img1 img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner img {
+    padding-top: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logo img {
+    margin-left: -270px;
+  }
+
+  .nav {
+    width: 600px;
+    margin: 0 40px;
+  }
 }
 
 /* END SECTION BANNER */
@@ -135,22 +185,37 @@ body {
 }
 
 .trending-image {
-  width: 90%;
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
   padding-bottom: 60px;
 }
 
 .img-list {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 20px;
 }
 
-.img > img {
-  grid-column: 1 / span 2;
-  grid-row: 1;
+.img {
+  display: grid;
+  grid-column: auto;
 }
+
+.img-list__img1 {
+  margin-left: 70px;
+}
+
+.img:nth-child(3){
+  padding-top: 65px;
+}
+
+.img:nth-child(4){
+  padding-top: 65px;
+}
+
+
 
 .image__caption p {
   padding-top: 10px;
@@ -232,12 +297,9 @@ body {
 /* END SECTION */
 /* ====================================== */
 
-
-
-
 /* ====================================== */
 /* SECTION 3 */
-.banner2 img{
+.banner2 img {
   width: 100%;
   padding-bottom: 20px;
 }
