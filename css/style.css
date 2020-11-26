@@ -11,32 +11,28 @@ body {
 
 /* ====================================== */
 /* CONTAINER */
-
-/* ====================================== */
-/* HEADER */
 .flex-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
   height: auto;
   margin: auto;
-  position: fixed;
-  background: #fff;
 }
 
+/* ====================================== */
+/* HEADER */
+
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  text-align: center;
 }
 
 /* ====================================== */
 /* NAV */
 .nav {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding-top: 60px;
+  margin: auto;
+  position: fixed;
+  background: #fff;
 }
 .nav__main-menu {
   border-top: 1px solid #eee;
@@ -52,9 +48,9 @@ body {
   margin: 0 -10px;
 }
 
-.nav__main-menu ul .nav__search-button {
+/* .nav__main-menu ul .nav__search-button {
   margin-left: auto;
-}
+} */
 
 .nav__search-button i {
   color: #000;
@@ -91,7 +87,7 @@ body {
 .nav__drop {
   list-style-type: none;
   margin: 0;
-  padding: 0px;
+  padding: 0;
   padding-top: 10px;
   position: absolute;
   display: none;
@@ -120,53 +116,86 @@ body {
 /* SECTION BANNER */
 
 .banner img {
-  padding-top: 7%;
-  min-width: 600px;
-  max-width: 100%;
+  padding-top: 80px;
+  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) and (min-width: 400px) {
   .banner img {
-    padding-top: 100px;
     width: 100%;
-    object-fit: cover;
-  }
-
-  .logo img {
-    margin-left: -400px;
+    margin-top: 50px;
   }
 
   .nav {
+    position: fixed;
+  }
+
+  .logo {
+    text-align: center;
+  }
+  .img-list__img1 {
+    display: flex;
     width: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 20px;
   }
-  .nav__input-search {
-    display: none;
+  .fresh-img {
+    margin: auto;
   }
 
-  .img-list__img1 img {
-    width: 300px;
-    height: auto;
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+  .fresh-img .fresh-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .fresh-img__caption {
+    text-align: center;
   }
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 700px) {
   .banner img {
-    padding-top: 100px;
     width: 100%;
-    object-fit: cover;
-  }
-
-  .logo img {
-    margin-left: -270px;
+    margin-top: 50px;
   }
 
   .nav {
+    position: fixed;
+  }
+
+  .logo {
+    text-align: center;
+  }
+  .img-list__img1 {
+    display: flex;
     width: 600px;
-    margin: 0 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+  }
+  .fresh-img {
+    margin: auto;
+  }
+
+  .fresh-img .fresh-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .fresh-image{
+    margin-left: 30px;
+  }
+
+  .fresh-img__caption {
+    text-align: justify;
   }
 }
 
@@ -186,36 +215,34 @@ body {
 
 .trending-image {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   padding-bottom: 60px;
 }
 
 .img-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .img {
   display: grid;
-  grid-column: auto;
+  margin: auto;
+  padding-top: 20px;
 }
 
 .img-list__img1 {
-  margin-left: 70px;
+  display: flex;
+  flex-grow: 1;
+  margin: auto;
 }
 
-.img:nth-child(3){
+.img:nth-child(3) {
   padding-top: 65px;
 }
 
-.img:nth-child(4){
+.img:nth-child(4) {
   padding-top: 65px;
 }
-
-
 
 .image__caption p {
   padding-top: 10px;
@@ -243,6 +270,8 @@ body {
 /* FRESH
  STORIES */
 .fresh-section {
+  display: grid;
+  grid-template-columns: 1fr;
   background: #f8f9fa;
   padding-bottom: 50px;
 }
@@ -254,17 +283,19 @@ body {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-.fresh-section__image-list {
-  width: 90%;
+
+
+.fresh-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: auto;
-  display: flex;
-  flex-direction: row;
 }
 
+
 .fresh-img {
-  margin: 10px 0;
-  flex-grow: 1;
+  flex-basis: 300px;
 }
+
 
 .fresh-img__caption p {
   padding-top: 10px;
@@ -287,10 +318,8 @@ body {
 }
 
 .fresh-text {
-  display: inline-block;
-  width: 550px;
+  width: 500px;
   text-align: justify;
-  padding-top: 20px;
   color: #555;
 }
 
